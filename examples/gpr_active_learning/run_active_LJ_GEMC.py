@@ -133,7 +133,8 @@ class DataWrapDensities(active_utils.DataWrapper):
     """
 
     def build_state(self, all_data=None, max_order=6):
-        """Builds a thermoextrap data object for the data described by this wrapper class.
+        """
+        Builds a thermoextrap data object for the data described by this wrapper class.
         If all_data is provided, should be list or tuple of (potential energies, X) to
         be used, where X should be appropriately weighted if the simulation is biased.
         Here, adds argument to factory_extrapmodel to model log(data).

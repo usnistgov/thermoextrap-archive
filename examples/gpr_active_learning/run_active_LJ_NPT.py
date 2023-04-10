@@ -76,9 +76,7 @@ class DataWrapPsat(active_utils.DataWrapper):
         return dat
 
     def build_state(self, max_order=None):
-        """
-        Builds a state that provides derivs.
-        """
+        """Builds a state that provides derivs."""
         # Max order will be ignored - only compute 0th and 1st derivatives
         del max_order
 

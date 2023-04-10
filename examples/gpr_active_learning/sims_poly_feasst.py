@@ -38,7 +38,8 @@ def poly_sim_NVT(
     steps_sim=1e7,
     steps_per=1e3,
 ):
-    """Runs simulation of a polymer system using MC moves with FEASST.
+    """
+    Runs simulation of a polymer system using MC moves with FEASST.
     Naming conventions follow MD metadynamics run with OpenMM; these and some inputs
     are maintained for compatibility with other code even though not needed/different.
     Inputs:
@@ -218,7 +219,8 @@ def poly_sim_ExpandedBeta(
     min_beta_fac=0.1,
     max_beta_fac=10.0,
 ):
-    """Runs simulation of a polymer system using MC moves with FEASST.
+    """
+    Runs simulation of a polymer system using MC moves with FEASST.
     Naming conventions follow MD metadynamics run with OpenMM; these and some inputs
     are maintained for compatibility with other code even though not needed/different.
     Inputs:
@@ -446,7 +448,8 @@ def poly_sim_ExpandedBeta(
 def calc_raw_U(
     base_dir, out_name, sim_num=None, info_name="polymer_out", bias_name="cv_bias_out"
 ):
-    """Postprocessing to calculate raw potential energies (bias removed) for each
+    """
+    Postprocessing to calculate raw potential energies (bias removed) for each
     configurations. Designed so will be compatible with SimWrapper post-processing function
     expectations.
     """
