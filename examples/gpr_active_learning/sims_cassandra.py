@@ -100,9 +100,7 @@ def calc_temp_and_mass(T_red, eps=1.0 * unit.kilojoule_per_mole):
 
 
 def calc_pressure(p_red, eps=1.0 * unit.kilojoule_per_mole, sigma=1.0 * unit.angstrom):
-    """
-    Calculates pressure in bar given reduced pressure and LJ parameters.
-    """
+    """Calculates pressure in bar given reduced pressure and LJ parameters."""
     p = p_red * eps / (sigma**3)
     p /= unit.AVOGADRO_CONSTANT_NA
     p = p.value_in_unit(unit.bar)
@@ -142,9 +140,7 @@ def setup_sim_dir(output_dir, ff_file, pdb_file):
 
 
 def update_mcf_file(output_dir, mcf_file, mass):
-    """
-    Opens a .mcf file and replaces mass with new mass
-    """
+    """Opens a .mcf file and replaces mass with new mass"""
     # Read lines of input mcf
     with open(mcf_file) as f:
         mcf_lines = f.read().splitlines()

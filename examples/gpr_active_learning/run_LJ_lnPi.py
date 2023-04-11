@@ -142,7 +142,8 @@ def state_from_info_dict(info, d_o=None):
 
 
 def tag_phases(list_of_phases):
-    """Simple tag_phases callback
+    """
+    Simple tag_phases callback
 
     This looks at the local maximum of each lnPiMasked object.
 
